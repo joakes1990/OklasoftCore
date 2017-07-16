@@ -10,10 +10,36 @@
 		D0B783E81F1C0BB100A34450 /* OklasoftCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B783E61F1C0BB100A34450 /* OklasoftCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D0B783F41F1C0BF200A34450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B783EE1F1C0BF200A34450 /* OklasoftNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0ACEED91F05CD5E005C35B6;
+			remoteInfo = OklasoftNetworking;
+		};
+		D0B783F61F1C0BF200A34450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B783EE1F1C0BF200A34450 /* OklasoftNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0ACEEE21F05CD5E005C35B6;
+			remoteInfo = OklasoftNetworkingTests;
+		};
+		D0B783FC1F1C0C0900A34450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B783F81F1C0C0900A34450 /* OklasoftError.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D05D3B431F0F20F30020627D;
+			remoteInfo = OklasoftError;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D0B783E31F1C0BB100A34450 /* OklasoftCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OklasoftCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B783E61F1C0BB100A34450 /* OklasoftCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OklasoftCore.h; sourceTree = "<group>"; };
 		D0B783E71F1C0BB100A34450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B783EE1F1C0BF200A34450 /* OklasoftNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OklasoftNetworking.xcodeproj; path = ../../OklasoftNetworking/OklasoftNetworking.xcodeproj; sourceTree = "<group>"; };
+		D0B783F81F1C0C0900A34450 /* OklasoftError.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OklasoftError.xcodeproj; path = ../../OklasoftError/OklasoftError.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +73,28 @@
 			isa = PBXGroup;
 			children = (
 				D0B783E61F1C0BB100A34450 /* OklasoftCore.h */,
+				D0B783F81F1C0C0900A34450 /* OklasoftError.xcodeproj */,
+				D0B783EE1F1C0BF200A34450 /* OklasoftNetworking.xcodeproj */,
 				D0B783E71F1C0BB100A34450 /* Info.plist */,
 			);
 			path = OklasoftCore;
+			sourceTree = "<group>";
+		};
+		D0B783EF1F1C0BF200A34450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0B783F51F1C0BF200A34450 /* OklasoftNetworking.framework */,
+				D0B783F71F1C0BF200A34450 /* OklasoftNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0B783F91F1C0C0900A34450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0B783FD1F1C0C0900A34450 /* OklasoftError.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,12 +153,46 @@
 			mainGroup = D0B783D91F1C0BB100A34450;
 			productRefGroup = D0B783E41F1C0BB100A34450 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D0B783F91F1C0C0900A34450 /* Products */;
+					ProjectRef = D0B783F81F1C0C0900A34450 /* OklasoftError.xcodeproj */;
+				},
+				{
+					ProductGroup = D0B783EF1F1C0BF200A34450 /* Products */;
+					ProjectRef = D0B783EE1F1C0BF200A34450 /* OklasoftNetworking.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D0B783E21F1C0BB100A34450 /* OklasoftCore */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D0B783F51F1C0BF200A34450 /* OklasoftNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OklasoftNetworking.framework;
+			remoteRef = D0B783F41F1C0BF200A34450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0B783F71F1C0BF200A34450 /* OklasoftNetworkingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OklasoftNetworkingTests.xctest;
+			remoteRef = D0B783F61F1C0BF200A34450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0B783FD1F1C0C0900A34450 /* OklasoftError.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OklasoftError.framework;
+			remoteRef = D0B783FC1F1C0C0900A34450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D0B783E11F1C0BB100A34450 /* Resources */ = {
