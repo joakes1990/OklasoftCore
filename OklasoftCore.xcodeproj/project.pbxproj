@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08097501F1C1306001D99D5 /* OklasoftError.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B783FD1F1C0C0900A34450 /* OklasoftError.framework */; };
+		D08097531F1C130C001D99D5 /* OklasoftNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B783F51F1C0BF200A34450 /* OklasoftNetworking.framework */; };
 		D0B783E81F1C0BB100A34450 /* OklasoftCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B783E61F1C0BB100A34450 /* OklasoftCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08097531F1C130C001D99D5 /* OklasoftNetworking.framework in Frameworks */,
+				D08097501F1C1306001D99D5 /* OklasoftError.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +392,7 @@
 				D0B783ED1F1C0BB100A34450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

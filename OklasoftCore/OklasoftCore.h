@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
 //! Project version number for OklasoftCore.
 FOUNDATION_EXPORT double OklasoftCoreVersionNumber;
 
